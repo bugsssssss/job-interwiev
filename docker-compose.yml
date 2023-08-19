@@ -9,7 +9,7 @@ services:
     
     environment:
       - DB_HOST=database
-      - DB_NAME=dbname
+      - DB_NAME=users
       - DB_USER=dbuser
       - DB_PASS=pass 
 

@@ -8,7 +8,7 @@ from .validators import generate_random_code
 
 class User(AbstractUser):
     phone_number = models.CharField("phone", max_length=50, blank=True)
-    passcode = models.PositiveIntegerField("passcode")
+    passcode = models.PositiveIntegerField("passcode", null=True)
     invite_code = models.CharField(
         "referal code", max_length=6, default=generate_random_code(6), unique=True)
     activated_invite_code = models.CharField(
